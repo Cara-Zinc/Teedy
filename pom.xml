@@ -90,7 +90,7 @@
         <artifactId>maven-antrun-plugin</artifactId>
         <version>${org.apache.maven.plugins.maven-antrun-plugin.version}</version>
       </plugin>
-      
+
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
@@ -109,6 +109,10 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>3.6.3</version>
+        <configuration>
+          <quiet>true</quiet> <!-- Suppress output to console -->
+          <doclint>none</doclint> <!-- Disable doclint which checks for Javadoc comments -->
+        </configuration>
         <executions>
           <execution>
             <id>aggregate</id>
