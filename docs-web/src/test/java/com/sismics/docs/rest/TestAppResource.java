@@ -15,7 +15,6 @@ import javax.ws.rs.core.Form;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;
 
-
 /**
  * Test the app resource.
  * 
@@ -114,11 +113,19 @@ public class TestAppResource extends BaseJerseyTest {
         Assert.assertTrue(date3 >= date4);
     }
 
+
     /**
      * Test the guest login.
      */
     @Test
     public void testGuestLogin() {
+        // // Wrong login config
+        // String adminToken = clientUtil.login("ad", "admin", false);
+        // Response response = target().path("/user/login").request()
+        //         .post(Entity.form(new Form()
+        //                 .param("username", "guest")));
+        // Assert.assertEquals(Status.UNAUTHORIZED.getStatusCode(), response.getStatus());
+
         // Login admin
         String adminToken = clientUtil.login("admin", "admin", false);
 
