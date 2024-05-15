@@ -139,9 +139,9 @@
           <failOnViolation>false</failOnViolation>
           <!-- printFailingErrors is pretty useful -->
           <printFailingErrors>true</printFailingErrors>
-          <rulesets>
+<!--           <rulesets>
             <ruleset>/mnt/d/CSEThirdYear/CS304/MyTeedy/Teedy/rules.xml</ruleset>
-          </rulesets>
+          </rulesets> -->
         </configuration>
         <executions>
           <execution>
